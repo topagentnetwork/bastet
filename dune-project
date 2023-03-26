@@ -7,6 +7,7 @@
 (generate_opam_files false) ;disable while pinning melange deps
 (implicit_transitive_deps false)
 (using melange 0.1)
+(using mdx 0.3)
 
 (package
  (name bastet)
