@@ -15,7 +15,7 @@ let const, id = Function.const, Function.Category.id
 
 (* This module is here just to test certain properties *)
 module Toggle = struct
-  open Interface
+  open Bastet.Interface
 
   type toggle =
     | Off

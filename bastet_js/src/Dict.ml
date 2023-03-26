@@ -1,3 +1,4 @@
+open Bastet
 open Interface
 
 let ( <. ) = Function.Infix.( <. )

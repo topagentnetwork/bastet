@@ -95,9 +95,9 @@ module type GROUP_ANY = sig
 end
 
 (** Every {!GROUP} is a {!LOOP}. *)
-module type GROUP_LOOP = functor (G : GROUP) -> LOOP
+module type GROUP_LOOP = functor (_ : GROUP) -> LOOP
 
-module type GROUP_LOOP_ANY = functor (G : GROUP_ANY) -> LOOP_ANY
+module type GROUP_LOOP_ANY = functor (_ : GROUP_ANY) -> LOOP_ANY
 
 module type ABELIAN_GROUP = sig
   include GROUP

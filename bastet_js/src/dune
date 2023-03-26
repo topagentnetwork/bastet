@@ -1,0 +1,5 @@
+(library
+ (name bastet_js)
+ (modes melange)
+ (libraries bastet)
+ (public_name bastet.js))
