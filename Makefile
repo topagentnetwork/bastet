@@ -124,7 +124,7 @@ dev-tools:
 
 .PHONY: create-4.14-switch
 create-4.14-switch:
-	opam switch create -y . 4.14.1 --with-test --with-doc
+	opam switch create -y . 4.14.1 --deps-only --with-test --with-doc
 
 .PHONY: 4.14-switch
 4.14-switch: remove-switch create-4.14-switch dev-tools
