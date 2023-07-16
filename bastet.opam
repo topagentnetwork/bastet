@@ -16,7 +16,6 @@ depends: [
   "odoc" {>= "1.5.0" & with-doc}
   "mustache" {>= "3.1.0" & with-doc}
   "dune" {dev}
-  "melange-compiler-libs" {dev}
   "melange" {dev}
 ]
 build: [
