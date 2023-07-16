@@ -21,7 +21,6 @@
   (qcheck (and (and (>= 0.13) (< 0.18)) :with-test))
   (qcheck-alcotest (and (and (>= 0.13) (< 0.18)) :with-test))
   (mdx (and (>= 1.6.0) :with-test))
-  (bisect_ppx (and (>= 2.1.0)))
   (odoc (and (>= 1.5.0) :with-doc))
   (mustache (and (>= 3.1.0) :with-doc))
   (dune (>= 2.0.1))))
