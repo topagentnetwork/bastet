@@ -1,6 +1,6 @@
 (melange.emit
  (alias melange.test)
  (target commonjs)
- (libraries bastet bastet_js)
+ (libraries bastet bastet_js bs-mocha)
  (module_systems
   (commonjs bs.js)))

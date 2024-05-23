@@ -25,12 +25,12 @@ var merge = function(a, b) {
 };
 |}]
 
-external fold_left : ('a -> 'b -> 'a) -> 'a -> 'b Js.Dict.t -> 'a = "fold_left" [@@bs.val]
+external fold_left : ('a -> 'b -> 'a) -> 'a -> 'b Js.Dict.t -> 'a = "fold_left"
 
 external fold_left_keys : ('a -> string -> 'b -> 'a) -> 'a -> 'b Js.Dict.t -> 'a = "fold_left_keys"
   [@@bs.val]
 
-external merge : 'a Js.Dict.t -> 'a Js.Dict.t -> 'a Js.Dict.t = "merge" [@@bs.val]
+external merge : 'a Js.Dict.t -> 'a Js.Dict.t -> 'a Js.Dict.t = "merge" 
 
 external unsafe_from_object : 'a Js.t -> 'b Js.Dict.t = "%identity"
 
@@ -46,7 +46,7 @@ module type TRAVERSABLE_F = functor (A : APPLICATIVE) ->
 module Functor : FUNCTOR with type 'a t = 'a Js.Dict.t = struct
   type 'a t = 'a Js.Dict.t
 
-  let map f a = Js.Dict.map (fun [@bs] x -> f x) a
+  let map f a = Js.Dict.map ~f:(fun [@u] x -> f x) a
 end
 
 module Apply : APPLY with type 'a t = 'a Js.Dict.t = struct

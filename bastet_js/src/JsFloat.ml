@@ -7,5 +7,5 @@ open Bastet.Interface
 module Show : SHOW with type t = float = struct
   type t = float
 
-  let show = Js.Float.toString
+  let show t = Js.Float.toString t
 end
