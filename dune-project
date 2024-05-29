@@ -1,6 +1,6 @@
 (lang dune 3.8)
 (name tan-bastet)
-(source (github Risto-Stevcev/bastet))
+(source (github topagentnetwork/bastet))
 (license BSD-3-Clause)
 (authors "Risto Stevcev")
 (maintainers "me@risto.codes")
