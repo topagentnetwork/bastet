@@ -1,4 +1,5 @@
 opam-version: "2.0"
+version: "3.0.0"
 synopsis: "An OCaml library for category theory and abstract algebra"
 maintainer: ["me@risto.codes"]
 authors: ["Risto Stevcev"]
@@ -15,8 +16,8 @@ depends: [
   "mdx" {>= "1.6.0" & with-test}
   "odoc" {>= "1.5.0" & with-doc}
   "mustache" {>= "3.1.0" & with-doc}
-  "dune" {dev}
-  "melange" {dev}
+  "dune"
+  "melange"
 ]
 build: [
   ["dune" "subst"] {dev}

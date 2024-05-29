@@ -1,5 +1,5 @@
 (lang dune 3.8)
-(name bastet)
+(name tan-bastet)
 (source (github Risto-Stevcev/bastet))
 (license BSD-3-Clause)
 (authors "Risto Stevcev")
@@ -10,7 +10,7 @@
 (using mdx 0.3)
 
 (package
- (name bastet)
+ (name tan-bastet)
  (synopsis "An OCaml library for category theory and abstract algebra")
  (documentation "https://risto-stevcev.github.io/bastet")
  (tags

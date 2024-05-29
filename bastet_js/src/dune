@@ -2,5 +2,5 @@
  (name bastet_js)
  (modes melange)
  (libraries bastet melange.belt)
- (public_name bastet.js)
+ (public_name tan-bastet.js)
  (preprocess (pps melange.ppx)))

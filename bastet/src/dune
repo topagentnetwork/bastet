@@ -1,7 +1,7 @@
 (library
  (name bastet)
- (public_name bastet)
+ (public_name tan-bastet)
  (modes :standard melange))
 
 (documentation
- (package bastet))
+ (package tan-bastet))
